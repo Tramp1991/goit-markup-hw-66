@@ -753,7 +753,28 @@ footer .logo-color {
   background: var(--dairy, #fcfcfc);
 }
 .modal-send {
+  color: var(--white, #fff);
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
   margin-top: 24px;
+  margin-left: 119px;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.modal-send :hover,
+.modal-send:focus {
+  background-color: #404bbf;
 }
 .modal-policy {
   color: var(--lightslate, #8e8f99);
