@@ -501,7 +501,7 @@ align-items: center;
 gap: 16px;
 border-radius: 4px;
 background: var(--iris, #4D5AE5);
-olor: var(--white, #FFF);
+color: var(--white, #FFF);
 text-align: center;
 font-family: Roboto;
 font-size: 16px;
