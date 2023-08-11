@@ -448,61 +448,66 @@
             </li>
           </ul>
         </div>
-      </div>
-      <form>
         <div class="footer-right">
-          <p>Subscribe</p>
-          <label for="subscribe" class="footer-form"></label>
-          <input
-            type="text"
-            id="subscribe"
-            class="footer-input"
-            placeholder="E-mail"
-          />
+          <p class="footer-info">Subscribe</p>
+          <form class="footer-form">
+            <label for="subscribe"></label>
+            <input
+              required
+              type="text"
+              id="subscribe"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="footer-send">
+              <span>Subscribe</span>
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-        <button type="submit" class="footer-send">Subscribe</button>
-        <svg class="footer-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-telegram"></use>
-        </svg>
-      </form>
+      </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
-          <svg class="modal-icon" width="8" height="8">
+          <svg class="modal-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
         <form>
-          <p class="modal-desc">
+          <h2 class="modal-desc">
             Leave your contacts and we will call you back
-          </p>
+          </h2>
           <ul class="modal-list">
             <li class="modal-item">
               <lable for="name" class="modal-lable">Name</lable>
-              <svg class="form-name" width="18" height="18">
+              <input id="name" required type="text" class="modal-input" />
+              <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-              <input id="name" type="text" class="modal-input" />
             </li>
             <li class="modal-item">
               <lable for="tel" class="modal-lable">Phone</lable>
-              <svg class="form-phone" width="18" height="24">
+              <input id="tel" required type="text" class="modal-input" />
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-              <input id="tel" type="text" class="modal-input" />
             </li>
             <li class="modal-item">
               <lable for="email" class="modal-lable">Email</lable>
-              <svg class="form-email" width="18" height="24">
+              <input id="email" required type="text" class="modal-input" />
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-              <input id="email" type="text" class="modal-input" />
             </li>
             <li class="modal-item">
               <label for="comment">Comment</label>
               <textarea
+                class="modal-comment"
                 name="comment"
                 id="comment"
                 rows="5"
@@ -513,7 +518,8 @@
           <div class="modal-policy">
             <input type="checkbox" name="policy" id="policy" />
             <label for="policy"
-              >I accept the terms and conditions of the Privacy Policy</label
+              >I accept the terms and conditions of the
+              <a class="modal-link" href="">Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="modal-send">Send</button>
